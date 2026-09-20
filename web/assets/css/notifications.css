@@ -1,0 +1,437 @@
+/* =========================================================
+   NOTIFICATION PAGE
+   ========================================================= */
+
+.notification-page {
+    min-height: calc(100vh - 72px);
+    background: #f7f9f8;
+    padding: 45px 20px 70px;
+}
+
+.notification-container {
+    width: 92%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   NOTIFICATION HEADER
+   ========================================================= */
+
+.notification-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.notification-back {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #176b4d !important;
+    text-decoration: none !important;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.notification-header h1 {
+    margin: 0 0 7px;
+    color: #17324d;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.notification-header p {
+    margin: 0;
+    color: #718096;
+    font-size: 14px;
+}
+
+.notification-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* =========================================================
+   NOTIFICATION COUNT
+   ========================================================= */
+
+.notification-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    background: #eef7f3;
+    color: #176b4d;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   MARK ALL BUTTON
+   ========================================================= */
+
+.mark-all-btn {
+    border: 0;
+    background: #176b4d;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.mark-all-btn:hover {
+    background: #12583f;
+}
+
+
+/* =========================================================
+   NOTIFICATION PANEL
+   ========================================================= */
+
+.notification-panel {
+    background: #ffffff;
+    border: 1px solid #e3e8eb;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.notification-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   NOTIFICATION ITEM
+   ========================================================= */
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 22px;
+    border-bottom: 1px solid #edf0f2;
+    transition: background 0.2s ease;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-item.unread {
+    background: #f5faf7;
+}
+
+.notification-item:hover {
+    background: #f8fbf9;
+}
+
+
+/* =========================================================
+   NOTIFICATION ICON
+   ========================================================= */
+
+.notification-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+
+    border-radius: 10px;
+    background: #eef7f3;
+    color: #176b4d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   NOTIFICATION CONTENT
+   ========================================================= */
+
+.notification-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.notification-title-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.notification-title-row h3 {
+    margin: 0;
+    color: #17324d;
+    font-size: 15px;
+    font-weight: 750;
+}
+
+.notification-content p {
+    margin: 6px 0 7px;
+    color: #5f6f7d;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.notification-time {
+    color: #9aa6af;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   UNREAD DOT
+   ========================================================= */
+
+.unread-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #176b4d;
+}
+
+
+/* =========================================================
+   NOTIFICATION ACTIONS
+   ========================================================= */
+
+.notification-actions {
+    flex-shrink: 0;
+}
+
+.notification-read-btn {
+    background: #ffffff;
+    color: #176b4d;
+    border: 1px solid #cddbd4;
+    padding: 8px 11px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.notification-read-btn:hover {
+    background: #eef7f3;
+    border-color: #176b4d;
+}
+
+.read-label {
+    color: #9aa6af;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   EMPTY NOTIFICATION STATE
+   ========================================================= */
+
+.notification-empty {
+    padding: 75px 25px;
+    text-align: center;
+}
+
+.notification-empty-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 18px;
+
+    border-radius: 15px;
+    background: #eef7f3;
+    color: #176b4d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.notification-empty h2 {
+    margin: 0 0 8px;
+    color: #17324d;
+    font-size: 20px;
+}
+
+.notification-empty p {
+    max-width: 500px;
+    margin: 0 auto;
+    color: #718096;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   DASHBOARD SPECIAL ACTIONS ROW
+   Notifications + Career Growth
+   ========================================================= */
+
+.dashboard-special-actions {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+    margin: 20px 0 25px;
+}
+
+
+/* =========================================================
+   DASHBOARD NOTIFICATION BUTTON
+   ========================================================= */
+
+.dashboard-notification-btn {
+    width: 100%;
+    height: 78px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 14px 18px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid #e1e8e4;
+    border-radius: 12px;
+
+    text-decoration: none !important;
+    color: #17231e;
+
+    transition: all 0.2s ease;
+}
+
+.dashboard-notification-btn:hover {
+    border-color: #176b4d;
+
+    box-shadow: 0 5px 16px rgba(23, 107, 77, 0.10);
+
+    transform: translateY(-2px);
+}
+
+
+/* Dashboard notification icon */
+
+.dashboard-notification-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 14px;
+
+    background: #edf7f2;
+    color: #176b4d;
+
+    border-radius: 10px;
+
+    font-size: 19px;
+}
+
+
+/* Dashboard notification text */
+
+.dashboard-notification-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.dashboard-notification-content h3 {
+    margin: 0 0 4px;
+
+    color: #17231e;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.dashboard-notification-content p {
+    margin: 0;
+
+    color: #78827d;
+
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
+/* Dashboard notification arrow */
+
+.dashboard-notification-arrow {
+    margin-left: 12px;
+
+    color: #9aa49f;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.dashboard-notification-btn:hover
+.dashboard-notification-arrow {
+    color: #176b4d;
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .dashboard-special-actions {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .notification-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .notification-header-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .notification-item {
+        align-items: flex-start;
+    }
+
+    .notification-actions {
+        display: none;
+    }
+
+    .dashboard-notification-btn {
+        height: 76px;
+    }
+}

@@ -1,0 +1,354 @@
+.bid-health-page {
+    background: #f7f9f8;
+    min-height: 100vh;
+    padding: 40px 20px 70px;
+}
+
+.bid-health-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bid-back {
+    color: #176b4d;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.bid-header {
+    margin: 28px 0;
+}
+
+.bid-eyebrow,
+.bid-label,
+.bid-section-heading span {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #176b4d;
+}
+
+.bid-header h1 {
+    margin: 8px 0;
+    font-size: 36px;
+    color: #17201c;
+}
+
+.bid-header p {
+    color: #68736e;
+}
+
+.bid-project-card,
+.bid-comparison-card {
+    background: #ffffff;
+    border: 1px solid #e4e9e6;
+    border-radius: 14px;
+    padding: 26px;
+    margin-bottom: 20px;
+}
+
+.bid-project-card > span {
+    font-size: 11px;
+    font-weight: 700;
+    color: #7a8580;
+    letter-spacing: 1px;
+}
+
+.bid-project-card h2 {
+    margin: 8px 0 20px;
+    color: #17201c;
+}
+
+.bid-project-budget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bid-project-budget span {
+    color: #68736e;
+}
+
+.bid-project-budget strong {
+    color: #176b4d;
+    font-size: 18px;
+}
+
+.bid-health-main {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 22px;
+    background: #ffffff;
+    border: 1px solid #e4e9e6;
+}
+
+.bid-health-main.healthy {
+    border-left: 5px solid #176b4d;
+}
+
+.bid-health-main.moderate {
+    border-left: 5px solid #b8860b;
+}
+
+.bid-health-main.low,
+.bid-health-main.high {
+    border-left: 5px solid #b04a4a;
+}
+
+.bid-health-circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 8px solid #176b4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bid-health-circle span {
+    font-size: 22px;
+    font-weight: 800;
+    color: #176b4d;
+}
+
+.bid-health-main h2 {
+    margin: 8px 0;
+    font-size: 28px;
+}
+
+.bid-health-main p {
+    color: #68736e;
+    line-height: 1.6;
+}
+
+.bid-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.bid-stat-card {
+    background: #ffffff;
+    border: 1px solid #e4e9e6;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.bid-stat-card span {
+    display: block;
+    font-size: 11px;
+    color: #7a8580;
+    font-weight: 700;
+    letter-spacing: .7px;
+    margin-bottom: 10px;
+}
+
+.bid-stat-card strong {
+    font-size: 22px;
+    color: #17201c;
+}
+
+.bid-section-heading {
+    margin-bottom: 25px;
+}
+
+.bid-section-heading h2 {
+    margin: 7px 0 0;
+    color: #17201c;
+}
+
+.budget-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.budget-row div {
+    background: #f7f9f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.budget-row span {
+    display: block;
+    color: #68736e;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.budget-row strong {
+    font-size: 19px;
+    color: #176b4d;
+}
+
+.bid-recommendation {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    background: #edf6f1;
+    border: 1px solid #cfe4d8;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.bid-recommendation-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #176b4d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.bid-recommendation span {
+    font-size: 11px;
+    font-weight: 700;
+    color: #176b4d;
+    letter-spacing: .8px;
+}
+
+.bid-recommendation h2 {
+    margin: 7px 0;
+}
+
+.bid-recommendation p {
+    color: #53615b;
+    line-height: 1.6;
+}
+
+.bid-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.bid-primary-btn,
+.bid-secondary-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.bid-primary-btn {
+    background: #176b4d;
+    color: #ffffff;
+}
+
+.bid-secondary-btn {
+    background: #ffffff;
+    color: #176b4d;
+    border: 1px solid #176b4d;
+}
+
+@media (max-width: 800px) {
+
+    .bid-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .budget-row {
+        grid-template-columns: 1fr;
+    }
+
+    .bid-health-main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .bid-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .bid-header h1 {
+        font-size: 28px;
+    }
+
+    .bid-actions {
+        flex-direction: column;
+    }
+
+    .bid-primary-btn,
+    .bid-secondary-btn {
+        text-align: center;
+    }
+}
+.manage-actions-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.action-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.action-card.primary-card {
+    background-color: #0d5c3a;
+    color: #ffffff;
+}
+
+.action-card.primary-card:hover {
+    background-color: #08432a;
+}
+
+.action-card.secondary-card {
+    background-color: #f4f6f5;
+    border: 1px solid #e0e6e3;
+    color: #111827;
+}
+
+.action-card.secondary-card:hover {
+    background-color: #e8eee9;
+    border-color: #0d5c3a;
+}
+
+.action-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.action-card.primary-card .action-card-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.action-card-content h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.action-card-content p {
+    margin: 2px 0 0 0;
+    font-size: 12px;
+    opacity: 0.8;
+}
